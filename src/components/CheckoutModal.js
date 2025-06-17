@@ -20,9 +20,7 @@ function CheckoutModal({ onClose }) {
   const [orderId, setOrderId] = useState(null);
 
   // Calculate total
-  const subtotal = items.reduce((total, item) => total + item.price * item.quantity, 0);
-  const feeservice = 2000;
-  const total = subtotal + feeservice;
+  const total = items.reduce((total, item) => total + item.price * item.quantity, 0)
   // Handle form submission for step 1
   const handleFormSubmit = async (e) => {
     e.preventDefault();

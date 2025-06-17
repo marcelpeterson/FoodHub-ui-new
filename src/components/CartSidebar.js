@@ -10,9 +10,7 @@ function CartSidebar() {
   const navigate = useNavigate()
   const [showCheckoutModal, setShowCheckoutModal] = useState(false)
 
-  const subtotal = items.reduce((total, item) => total + item.price * item.quantity, 0)
-  const feeservice = 2000
-  const total = subtotal + feeservice
+  const total = items.reduce((total, item) => total + item.price * item.quantity, 0)
 
   const handleCheckout = () => {
     if (!isAuthenticated()) {
