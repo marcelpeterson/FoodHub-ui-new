@@ -158,10 +158,6 @@ function CheckoutModal({ onClose }) {
                             <span>Rp {(item.price * item.quantity).toLocaleString("id-ID")}</span>
                         </div>
                         ))}
-                        <div className={styles['mini-item']}>
-                            <span>Fee Service</span>
-                            <span>Rp {feeservice.toLocaleString("id-ID")}</span>
-                        </div>
                     </div>
                     <div className={styles['mini-total']}>
                         <strong>Total: Rp {total.toLocaleString("id-ID")}</strong>

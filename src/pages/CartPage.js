@@ -160,21 +160,13 @@ function CartPage() {
                 </div>
                 <div className="order-summary-content">
                   <div className="order-summary-details">
-                    <div className="summary-row">
-                      <span>Subtotal</span>
-                      <span>Rp {subtotal.toLocaleString('id-ID')}</span>
-                    </div>
-                    {/* <div className="summary-row">
-                      <span>Fee Service</span>
-                      <span>Rp {feeservice.toLocaleString('id-ID')}</span>
-                    </div> */}
-                    <div className="summary-divider"></div>
                     <div className="summary-row total">
                       <span>Total</span>
                       <span>Rp {total.toLocaleString('id-ID')}</span>
                     </div>
                   </div>
-                </div>                <div className="order-summary-footer">
+                </div>
+                <div className="order-summary-footer">
                   <button className="checkout-button" onClick={handleCheckout}>
                     Proceed to Checkout
                   </button>
