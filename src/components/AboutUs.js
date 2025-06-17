@@ -17,7 +17,7 @@ Dengan menggunakan FoodHub, Anda dapat dengan cepat menemukan beragam pilihan ma
           <div className="about-content">
             <div className="about-image">
               <img 
-                src="/vision.png" 
+                src="/Vision.png" 
                 alt="Food delivery team planning" 
               />
             </div>
