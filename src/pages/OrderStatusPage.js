@@ -73,7 +73,7 @@ const OrderStatusPage = () => {
       if (!token) return;
 
       const newConnection = new HubConnectionBuilder()
-        .withUrl(`${process.env.REACT_APP_API_URL || 'http://localhost:5001'}/chathub`, {
+        .withUrl(`${process.env.REACT_APP_API_URL || 'https://api.marcelpeterson.me'}/chathub`, {
           accessTokenFactory: () => token
         })
         .withAutomaticReconnect()
