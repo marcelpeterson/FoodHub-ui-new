@@ -12,7 +12,8 @@ class ChatService {
   async connect(token) {
     if (this.connection) {
       await this.disconnect();
-    }    this.connection = new signalR.HubConnectionBuilder()
+    }    
+    this.connection = new signalR.HubConnectionBuilder()
       .withUrl('https://api.marcelpeterson.me/chathub', {
         accessTokenFactory: () => token,
         transport: signalR.HttpTransportType.WebSockets | signalR.HttpTransportType.LongPolling,
